@@ -1,0 +1,397 @@
+<!-- PAGINA 1 : PAGINA PRINCIPAL -->
+<!-------------------------------------------------------------------------------->
+<div data-role="page" id="page1" data-add-back-btn="true" data-position="fixed"  >
+
+  <!-- CABECERA -->
+  <div data-role="header" data-theme="b">
+    <h5> Instituto Marcial Solís Dacosta </h5>
+    <div data-role="navbar" data-theme="e">
+        <ul>
+            <li><a href="#" class="ui-btn ui-icon-home ui-btn-icon-left"> Inicio </a></li>
+            <li><a href="#page2" class="ui-btn ui-icon-user ui-btn-icon-left" data-rel="dialog" > Iniciar Sesión </a></li>
+        </ul>
+    </div>
+
+  </div>
+
+  <!-- CONTENIDO -->
+  <div role="main" class="ui-content" data-theme="b">
+    <div class="container">
+      <div id="slides">
+        <img src="img/img4.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+        <img src="img/img3.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+        <img src="img/celeA.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+        <img src="img/tecC.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      </div>
+    </div>
+    <!-- End SlidesJS Required: Start Slides -->
+
+
+
+     <h2>Historia</h2>
+    <p>
+        Fundado el 14 de Febrero de 1989, gracias al apoyo de los cooperativistas por este motivo se bautizo con el
+        nombre del licenciado Don Marcial Solís Dacosta considerado el padre del cooperativismo en Honduras. Comenzó sus
+        operaciones como un colegio semi-oficial con la modalidad de ciclo común de cultura general en la parte baja del salón
+        de usos múltiples "Minerva".
+      </p>
+      <h2>Cambio de Local</h2>
+      <p>
+        luego en el año de 1998 se traslado a un edificio completamente nuevo construido gracias
+        a la ayuda del patronato pro-mejoramiento de San Juancito presidido por el señor Gregorio Pineda y el FHIS cuyo ministro
+        era el ex presidente José Manuel Zelaya Rosales, este cambio de edificio se realizo antes de que el huracán Mith
+        azotara al pueblo.
+        </p>
+        <h2>Se nombra como instituto</h2>
+        <p>
+        En el año 1994 se convirtió a instituto oficial cambiando su modalidad a ciclo básico técnico
+        comenzaron a funcionar los talleres de madera, hogar y agricultura; en el año de 1998 se aperturo el Bachiller en
+        Administración de Empresas Agropecuarias, la cual brindo 5 promociones con casi 70 bachilleres, en el año de 2009
+        se inicio el Bachillerato en Ciencias y Letras y Técnico en Computación; y en 2011 se obtuvo la primera promoción de esta nueva carrera.
+      </p>
+  </div>
+
+  <!-- Derechos Reservados - 2015 -->
+  <div data-role="footer" data-theme="a" data-position="fixed">
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="https://es-la.facebook.com/" data-transition="slide" data-direction="reverse"
+                   class="ui-shadow fa fa-facebook-official" > facebook </a></li>
+            <li><a href="https://www.instagram.com/" data-transition="slide" data-direction="reverse"
+                   class="ui-shadow fa fa-instagram"> instagram </a></li>
+            <li><a href="https://twitter.com/?lang=es" data-transition="slide" data-direction="reverse"
+                   class="ui-shadow fa fa-twitter" > twitter </a></li>
+        </ul>
+    </div>
+  </div>
+
+
+      <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+      <script>
+        $(function() {
+          $('#slides').slidesjs({
+            width: 940,
+            height: 528,
+            play: {
+              active: true,
+              auto: true,
+              interval: 4000,
+              swap: true
+            }
+          });
+        });
+      </script>
+      <!-- End SlidesJS Required -->
+</div>
+<!-------------------------------------------------------------------------------->
+
+
+<!-- PAGINA 2 : INICIAR SESION -->
+<!-------------------------------------------------------------------------------->
+<div data-role="page" id="page2" data-position="fixed" >
+
+  <!-- CABECERA -->
+  <div data-role="header" data-theme="b">
+    <!-- <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-role="button" data-rel="back" data-transition="slide"
+                data-direction="reverse" > atrás </a> -->
+    <h1> Iniciar Sesión </h1>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div  role="main" class="ui-content" data-theme="b">
+        <form id="page2Login_form">
+            <div class="ui-field-contain">
+                <label for="usuario"> Usuario: </label>
+                <input type="text" name="usuario" id="usuario"
+                    placeholder="Usuario" />
+                <br/>
+
+
+                <label for="contrasenia"> Contraseña: </label>
+                <input type="password" name="contrasenia" id="contrasenia"
+                    placeholder="Contraseña" />
+                <br/>
+                <button id="btnLogin" data-role="button" data-theme="a">Ingresar</button>
+            </div>
+        </form>
+        <div>
+      </div>
+  </div>
+</div>
+<!-------------------------------------------------------------------------------->
+
+
+<!-- PAGINA 3 : BIENVENID@ -->
+<!-------------------------------------------------------------------------------->
+<div data-role="page" id="page3" data-position="fixed" >
+
+      <!-- CABECERA -->
+      <div data-role="header" data-theme="b">
+        <h1> Bienvenido (a)</h1>
+      </div>
+
+      <!-- CONTENIDO -->
+
+        <div role="main" class="ui-content" data-theme="b">
+        <h2>Registro</h2>
+
+               <a href="#page5" data-role="button" data-transition="slide"> Boleta de Matrícula</a>
+               <a href="#page6" data-role="button" data-transition="slide"> Notas Parciales </a>
+               <a href="#page11" data-role="button" data-transition="slide"> Seguridad de la cuenta</a>
+               <a data-role="button" id="btnLogOut"> Salir </a>
+
+  <!-- </div> -->
+
+
+      </div>
+
+      <!-- Derechos Reservados - 2015 -->
+      <div data-role="footer" data-theme="a" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                  <li><a href="#page8" class="ui-btn "> Mensajería </a></li>
+                  <li><a href="#page9" class="ui-btn "> Eventos </a></li>
+                </ul>
+            </div>
+      </div>
+
+</div>
+<!-------------------------------------------------------------------------------->
+
+
+<!-- PAGINA 5 : BOLETA DE MATRICULA -->
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+
+<!-- PAGINA 6 : NOTAS PARCIALES -->
+<!-------------------------------------------------------------------------------->
+<div data-role="page" id="page6" data-position="fixed">
+
+  <!-- CABECERA -->
+  <div data-role="header" data-theme="b">
+    <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-role="button" data-rel="back" data-transition="slide"
+                data-direction="reverse" > atrás </a>
+    <h1> Notas Parciales </h1>
+  </div>
+
+  <!-- CONTENIDO -->
+
+  <div role="main" class="ui-content" data-theme="b" >
+    <h3>
+      Muestra de notas parciales.
+    </h3>
+    <div align="center">
+      <img src="http://www.circusponies.com/wp/wp-content/uploads/2012/03/NoteBook3IconTrans256x256.png"/>
+  </div>
+
+    <div id="#notas" class="ui">
+
+    </div>
+
+</div>
+
+
+  <!-- PIE DE PAGINA -->
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h2> Derechos Reservados - 2015 </h2>
+  </div>
+
+</div>
+<!-------------------------------------------------------------------------------->
+
+
+
+<!-- PAGINA 12 : VISTA DE LOS CURSOS -->
+<!-------------------------------------------------------------------------------->
+<div data-role="page" id="page5" data-position="fixed">
+
+  <!-- CABECERA -->
+  <div data-role="header" data-theme="b">
+    <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-role="button" data-rel="back" data-transition="slide"
+                data-direction="reverse" > atrás </a>
+    <h1> Vista General de los Cursos </h1>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div role="main" class="ui-content" data-theme="b" >
+    <p>
+      Muestra de clases durante el período
+    </p>
+    <div align="center">
+      <img src="https://cdn0.iconfinder.com/data/icons/iconshock-windows7-icons/256/rar.png"/>
+  </div>
+    <table  data-role="table" class="ui-responsive ui2" id="#horarios">
+
+</table>
+</div>
+
+  <!-- Derechos Reservados - 2015 -->
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h2> Derechos Reservados - 2015 </h2>
+  </div>
+
+</div>
+<!-------------------------------------------------------------------------------->
+
+
+
+<!-- PAGINA 8 : MENSAJERIA -->
+<!-------------------------------------------------------------------------------->
+<div data-role="page" id="page8" data-position="fixed">
+
+  <!-- CABECERA -->
+  <div data-role="header" data-theme="b">
+    <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-role="button" data-rel="back" data-transition="slide"
+                data-direction="reverse" > atrás </a>
+    <h1> Mís Mensajes </h1>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div role="main" class="ui-content" data-theme="b">
+    <table data-role="table" data-mode="" class="ui-responsive ui-shadow" id="myTable">
+        <tr>
+          <td>Alfreds </td>
+          <td>Alfreds Futterkiste jjfjfnfjvnrfjkvfjvfjvbjhbvfgbhfbjfjjbgfjbdbjv hdujuifeujvbfkjvbnfijvf jfbvjfhbvguifjhvf ujfbjfbjfv</td>
+        </tr>
+
+        <tr>
+          <td>Alfreds cjj</td>
+          <td>Alfreds Futterkiste jjfjfnfjvnrfjkvfjvfjvbjhbvfgbhfbjfjjbgfjbdbjv hdujuifeujvbfkjvbnfijvf jfbvjfhbvguifjhvf ujfbjfbjfv</td>
+        </tr>
+
+        <tr>
+          <td>Alfreds Fss</td>
+          <td>Alfreds Futterkiste jjfjfnfjvnrfjkvfjvfjvbjhbvfgbhfbjfjjbgfjbdbjv hdujuifeujvbfkjvbnfijvf jfbvjfhbvguifjhvf ujfbjfbjfv</td>
+        </tr>
+        <tr>
+          <td>Alfreds </td>
+          <td>Alfreds Futterkiste jjfjfnfjvnrfjkvfjvfjvbjhbvfgbhfbjfjjbgfjbdbjv hdujuifeujvbfkjvbnfijvf jfbvjfhbvguifjhvf ujfbjfbjfv</td>
+        </tr>
+
+        <tr>
+          <td>Alfreds cjj</td>
+          <td>Alfreds Futterkiste jjfjfnfjvnrfjkvfjvfjvbjhbvfgbhfbjfjjbgfjbdbjv hdujuifeujvbfkjvbnfijvf jfbvjfhbvguifjhvf ujfbjfbjfv</td>
+        </tr>
+
+        <tr>
+          <td>Alfreds Fss</td>
+          <td>Alfreds Futterkiste jjfjfnfjvnrfjkvfjvfjvbjhbvfgbhfbjfjjbgfjbdbjv hdujuifeujvbfkjvbnfijvf jfbvjfhbvguifjhvf ujfbjfbjfv</td>
+        </tr>
+    </table>
+
+  </div>
+
+  <!-- PIE DE PAGINA -->
+
+  <div data-role="footer" data-theme="a" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+              <li><a href="#page10" class="ui-btn "> Nuevo Mensaje </a></li>
+            </ul>
+        </div>
+  </div>
+</div>
+
+<!-------------------------------------------------------------------------------->
+
+
+
+<!-- PAGINA 14 : EVENTOS -->
+<!-------------------------------------------------------------------------------->
+<div data-role="page" id="page10" data-position="fixed">
+
+  <div data-role="header" data-theme="b">
+    <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-role="button" data-rel="back" data-transition="slide" data-direction="reverse" > atrás </a>
+      <h1><i> Escribiendo... </i></h1>
+  </div>
+
+  <div role="main" class="ui-content" data-theme="b">
+    <h3> Para: </h3>  <br><input type="text" name="name" value="">
+    <h3> Mensaje: </h3> <br><textarea name="name" rows="8" cols="40"></textarea>
+  </div>
+
+  <div data-role="footer" data-theme="a" data-position="fixed">
+          <div data-role="navbar">
+              <ul>
+                  <li><a href="#page8" data-transition="slide" data-direction="reverse"
+                         class="ui-btn ui-icon-arrow-r ui-btn-icon-right" > Enviar </a></li>
+              </ul>
+          </div>
+        </div>
+</div>
+
+
+<!-- PAGINA 14 : EVENTOS -->
+<!-------------------------------------------------------------------------------->
+<div data-role="page" id="page9" data-position="fixed">
+
+  <!-- CABECERA -->
+  <div data-role="header" data-theme="b">
+    <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-role="button" data-rel="back" data-transition="slide"
+                data-direction="reverse" > atrás </a>
+    <h1> Eventos </h1>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div role="main" class="ui-content" data-theme="b">
+    <p>Eventos próximos</p>
+    <div align="center">
+
+    <img src="http://www.informatica.sip.ipn.mx/colmex/congresos/ixtapa/AutoPlay/Images/Calendario.png"/>
+
+  </div>
+
+
+      <tbody>
+
+        <div id="notas" class="ui3">
+
+      </div>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Derechos Reservados - 2015 -->
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h2> Derechos Reservados - 2015 </h2>
+  </div>
+
+</div>
+<!-------------------------------------------------------------------------------->
+
+<!-- PAGINA 10 : Cambiar Contrasenia -->
+<!-------------------------------------------------------------------------------->
+<div data-role="page" id="page11" data-position="fixed" >
+
+  <!-- CABECERA -->
+  <div data-role="header" data-theme="b">
+    <!-- <a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-role="button" data-rel="back" data-transition="slide"
+                data-direction="reverse" > atrás </a> -->
+    <h1> Cambiar Contraseña </h1>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div  role="main" class="ui-content" data-theme="b">
+    <div align="center">
+
+    <img src="https://cdn4.iconfinder.com/data/icons/pretty-office-part-7-reflection-style/256/Generate-keys.png"/>
+
+  </div>
+        <form id="page11Password_form">
+            <div class="ui-field-contain">
+                <label for="contrasenia"> Nueva Contraseña: </label><br>
+                <input type="password" name="contrasenia" id="contrasenia"
+                    placeholder="Contraseña" />
+                <br/>
+                <label for="contrasenia2"> Confirmar Contraseña: </label>
+                <br>
+                <input type="password" name="contrasenia" id="contrasenia2"
+                    placeholder="Contraseña" />
+                <br/>
+                <button id="btnPass" data-role="button" data-theme="b">Actualizar contraseña</button>
+            </div>
+        </form>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "uploadOnSave": true,
+  "hostname": "172.16.90.129",
+  "port": "22",
+  "target": "/home/administrador/seminario",
+  "ignore": [
+    ".git/**",
+    "node_modules/**"
+  ],
+  "username": "administrador",
+  "password": "devicc",
+  "transport": "scp",
+  "deleteLocal": false
+}
